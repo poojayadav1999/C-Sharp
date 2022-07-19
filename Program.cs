@@ -3,31 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace If_elseladder_program
+namespace SwitchstatProgram
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //If_else ladder
-            int z = 20;
-            if (z <= 15)
+            //switch stat
+            int x = 4;
+            switch (x)
             {
-                Console.WriteLine("You cannot drive");
-            }
-            else if (z < 18)
-            {
-                Console.WriteLine("You have a license");
-            }
-            else if (z <= 20)
-            {
-                Console.WriteLine("please you can get license");
-            }
-            else
-            {
-                 Console.WriteLine("You can drive");
+                case 1:
+                    Console.WriteLine("Today is Sunday");
+                    break;
+                case 2:
+                    Console.WriteLine("Today is Monday");
+                    break;
+                case 3:
+                    Console.WriteLine("Today is Tuesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Today is Wednesday");
+                    break;
+                case 5:
+                    Console.WriteLine("Today is Friday");
+                    break;
+                case 6:
+                    Console.WriteLine("Today is Saturday");
+                    break;
+                default:
+                    Console.WriteLine("No any day");
+                    break;
             }
             Console.ReadLine();
+
         }
     }
 }
